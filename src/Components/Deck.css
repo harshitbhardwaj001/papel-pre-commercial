@@ -1,0 +1,189 @@
+.subscribe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* font-family: HelveticaNeue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #96daea;
+}
+
+.mail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 50%;
+  margin-top: 4rem;
+  border-radius: 0.5rem;
+  padding: 3rem 1.5rem;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+
+.mail h2 {
+  font-size: 2rem;
+}
+
+.mail input {
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+}
+
+.mail button {
+  font-family: HelveticaNeue;
+  display: inline;
+  width: 30%;
+  margin-top: 2rem;
+  padding: 0.3rem 1.5rem;
+  background-color: #618999;
+  color: #fff;
+  letter-spacing: 1.1px;
+  font-size: 1.2rem;
+}
+
+.mail button:hover {
+  background-color: #101820;
+}
+
+.banner img {
+  width: 35rem;
+  transform: translate(45%, 25%);
+}
+
+.opendeck {
+  /* display: none; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: HelveticaNeue;
+  font-size: 2.8rem;
+  letter-spacing: 10px;
+  color: #101820;
+  border: 2px solid #101820;
+  border-radius: 1.1rem;
+  width: 375px;
+  padding: 0.1rem 0.3rem;
+  transform: translate(70%, 39%);
+}
+
+.deck {
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  transform: translate(15%);
+  padding: 4rem 0rem;
+  align-items: center;
+  margin: 10rem 4rem;
+  border: 1px solid #cecfce;
+  text-align: start;
+}
+
+.deck h1 {
+  font-family: "HelveticaNeueBold";
+  width: 75%;
+  margin: 4rem 2rem;
+  font-size: 3rem;
+}
+
+.deck img {
+  width: 75%;
+  max-height: 450px;
+}
+
+.deck .oneline {
+  font-family: "HelveticaNeue";
+  font-weight: 100;
+  width: 75%;
+  border-left: 2px solid #19459d;
+  padding: 8px 23px;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  color: #101820;
+}
+
+.deck .pitch {
+  width: 75%;
+  margin-top: 2rem;
+}
+
+.deck .pitch h2 {
+  font-family: "HelveticaNeueBold";
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.reserved {
+  position: absolute;
+  transform: translateY(6%);
+  font-size: 0.9rem;
+}
+
+.deck .pitch p {
+  font-family: "HelveticaNeue";
+  margin-top: 1.2rem;
+  font-weight: 100;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 850px) {
+  .banner {
+    font-size: 2rem;
+  }
+  .deck {
+    transform: translate(0%);
+  }
+  .deck h1 {
+    font-size: 1.5rem;
+    margin: 1rem 2rem;
+  }
+  .deck .oneline {
+    font-size: 1rem;
+  }
+  .deck .pitch h2 {
+    font-size: 1.2rem;
+  }
+  .deck .pitch p {
+    font-size: 1rem;
+  }
+  .reserved {
+    position: absolute;
+    transform: translateY(-10%);
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .mail {
+    width: 80%;
+  }
+  .mail button {
+    width: 40%;
+  }
+  .mail h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 295px) {
+  .mail {
+    width: 80%;
+  }
+
+  .mail button {
+    width: 50%;
+  }
+
+  .mail input {
+    padding: 1rem 0.1rem;
+  }
+}

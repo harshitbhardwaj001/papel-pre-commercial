@@ -1,0 +1,29 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"); */
+@font-face {
+  font-family: BebasNeue;
+  src: url("./fonts/BebasNeue Bold.ttf") format("truetype");
+  font-style: bold;
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("./fonts/HelveticaNeueLTStd-Cn.otf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: HelveticaNeueBold;
+  src: url("./fonts/HelveticaNeueLTStd-BdCn.otf") format("opentype");
+  font-style: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: HelveticaNeue, sans-serif;
+  text-align: center;
+}
