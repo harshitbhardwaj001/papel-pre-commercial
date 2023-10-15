@@ -38,3 +38,19 @@
   padding: 1rem;
   margin-top: 2rem;
 }
+
+@media screen and (max-width: 850px) {
+  .container {
+    transform: translate(-13%);
+    width: 85%;
+  }
+  .title {
+    font-size: 1rem;
+    right: 3.8rem;
+  }
+  .addComment textarea {
+    padding: 1rem 1rem;
+    width: 14rem;
+    height: 7rem;
+  }
+}

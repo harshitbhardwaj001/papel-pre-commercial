@@ -8,9 +8,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #96daea;
+  overflow-y: hidden;
 }
 
 .mail {
@@ -140,7 +141,8 @@
     font-size: 2rem;
   }
   .deck {
-    transform: translate(0%);
+    transform: translate(-13%);
+    width: 85%;
   }
   .deck h1 {
     font-size: 1.5rem;
@@ -174,7 +176,7 @@
   }
 }
 
-@media screen and (max-width: 295px) {
+@media screen and (max-width: 335px) {
   .mail {
     width: 80%;
   }
