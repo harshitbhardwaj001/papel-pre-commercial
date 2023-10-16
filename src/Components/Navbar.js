@@ -11,7 +11,7 @@ class Navbar extends Component {
   };
   render() {
     return (
-      <nav className="NavbarItems">
+      <nav className="NavbarItems" id="nav">
         {/* <h1 className="navbar-logo">Papel Water</h1> */}
         <div className="navbar-logo">
           <NavHashLink smooth to="/#home">
@@ -28,17 +28,22 @@ class Navbar extends Component {
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-                <NavHashLink className={item.cName} smooth to={item.url}>
+                <NavHashLink
+                  className={item.cName}
+                  smooth
+                  to={item.url}
+                  onClick={this.handClick}
+                >
                   <i className={item.icon}></i>
                   {item.title}
                 </NavHashLink>
               </li>
             );
           })}
-          <Link to="/investorpage">
+          <NavHashLink smooth to="/investorpage#deck">
             {console.log("Navigating")}
             <button>Papel's open deck for investors</button>
-          </Link>
+          </NavHashLink>
         </ul>
       </nav>
     );

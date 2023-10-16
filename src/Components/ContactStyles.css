@@ -1,6 +1,14 @@
 .form-container {
-  margin: 10rem 6rem;
+  margin-bottom: 10rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-top: 1rem;
   color: #101820;
+}
+
+#contact {
+  margin-top: 10rem;
+  margin-bottom: 0rem;
 }
 
 .form-container form {
@@ -32,7 +40,7 @@
 
 @media screen and (max-width: 850px) {
   .form-container {
-    margin: 10rem 2rem;
+    margin: 2rem 2rem;
     color: #101820;
   }
 

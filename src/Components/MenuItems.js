@@ -19,13 +19,13 @@ export const MenuItems = [
   // },
   {
     title: "Contact",
-    url: "/contact",
+    url: "/contact#contact",
     cName: "nav-links",
-    icon: "fa-solid fa-address-book"
+    icon: "fa-solid fa-address-book",
   },
   {
     title: "Papel's open deck for investors",
-    url: "/investorpage",
+    url: "/investorpage#deck",
     cName: "nav-links-mobile",
   },
 ];

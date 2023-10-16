@@ -1,51 +1,8 @@
 import "./Deck.css";
-import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 
 // import Navbar from "../Components/Nabvar";
 
 function Deck() {
-  const [email, setEmail] = useState("");
-  const form = useRef();
-  const [modal, setModal] = useState(false);
-
-  const emailValidation = () => {
-    const regex = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g;
-    if (regex.test(email)) {
-      return true;
-    } else {
-      return false;
-    }
-  };
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-    if (emailValidation() && email !== "") {
-      emailjs
-        .sendForm(
-          "service_74y6buj",
-          "template_ymccak3",
-          form.current,
-          "8iAF3NicGC42Ffgt6"
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
-      setModal(true);
-    } else {
-      alert("Enter Valid Email");
-    }
-  };
-
-  const handleChange = (e) => {
-    setEmail(e.target.value);
-  };
-
   return (
     <>
       {/* <div className="banner">
@@ -54,7 +11,7 @@ function Deck() {
           <h2>Open Deck</h2>
         </div>
       </div> */}
-      <div className="deck">
+      <div className="deck" id="deck">
         <h1>Open pitch for VCs: Papel Water</h1>
         <img alt="" src="./assets/img/investor.jpg" />
         <div className="oneline">
@@ -204,23 +161,6 @@ function Deck() {
           </p>
         </div>
       </div>
-      {!modal && (
-        <div className={"subscribe"}>
-          <div className="mail">
-            <h2>Enter Your Valid Email To Access Papel's Open Deck</h2>
-            <form ref={form}>
-              <input
-                type="email"
-                placeholder="Email"
-                value={email}
-                name="from_name"
-                onChange={handleChange}
-              />
-            </form>
-            <button onClick={sendEmail}>Enter</button>
-          </div>
-        </div>
-      )}
     </>
   );
 }
