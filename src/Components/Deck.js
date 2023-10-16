@@ -144,7 +144,7 @@ function Deck() {
             <u>How about an open deck?</u>
           </h2>
           <p>
-            Firstly, I appreciate how Nishant Mittal openly shared his business
+            Firstly, we appreciate how Nishant Mittal openly shared his business
             concept with every other VC without compromising his dedicated work.
             Investment requires full-time commitment, which we can't afford at
             this initial phase. If VCs, angel investors, or FMCG experts like

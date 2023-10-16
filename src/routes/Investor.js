@@ -3,6 +3,7 @@ import Comment from "../Components/Comments";
 import Deck from "../Components/Deck";
 import ErrorBoundary from "../ErrorBoundary";
 import emailjs from "@emailjs/browser";
+import { Helmet } from "react-helmet-async";
 
 function Investor() {
   const [email, setEmail] = useState("");
@@ -47,6 +48,14 @@ function Investor() {
   };
   return (
     <>
+      <Helmet>
+        <title>Open Deck - PAPEL WATER</title>
+        <meta
+          name="description"
+          content="Check out Papel's Open Deck for Investors."
+        />
+        <link rel="canonical" href="/investorpage" />
+      </Helmet>
       {/* <Navbar /> */}
       <ErrorBoundary>
         <Deck />

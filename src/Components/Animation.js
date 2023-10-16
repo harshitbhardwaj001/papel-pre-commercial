@@ -53,7 +53,7 @@ function Animation() {
         <div className="center">
           <img alt="" src="./assets/img/recycle_illustration.svg" />
           <h2>
-            <span className="blue">India’s first carton bottles which are</span>{" "}
+            <span className="blue">India's first carton bottle which is</span>{" "}
             <span className="black">100% recyclable.</span>
           </h2>
         </div>

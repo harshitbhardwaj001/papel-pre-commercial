@@ -5,6 +5,7 @@ import Animation from "../Components/Animation";
 import WaterName from "../Components/WaterName";
 import Footer from "../Components/Footer";
 import Coming from "../Components/comingsoon";
+import { Helmet } from "react-helmet-async";
 
 function Home() {
   {
@@ -12,6 +13,22 @@ function Home() {
   }
   return (
     <>
+      <Helmet>
+        <title>
+          Papel Water | 100% Recyclable Carton-Bottles, embodying our commitment
+          to sustainability. Made from 68% renewable materials and 75%
+          paper-based components, our packaging not only reduces environmental
+          impact but also supports a greener future. Enjoy the smoothest
+          alkaline water experience ever while contributing to a more
+          sustainable planet. Choose Papel Water and refresh responsibly.
+        </title>
+        <meta
+          name="description"
+          content="Papel Water offers an eco-conscious choice with our 100% recyclable carton-bottles, embodying our commitment to sustainability. Made from 68% renewable materials and 75% paper-based components, our packaging not only reduces environmental impact but also supports a greener future. Enjoy the smoothest alkaline water experience ever while contributing to a more sustainable planet. Choose Papel Water and refresh responsibly."
+          data-rh="true"
+        />
+        <link rel="canonical" href="/" />
+      </Helmet>
       {/* <Navbar /> */}
       <Hero
         cName="hero"
@@ -54,7 +71,7 @@ function Home() {
         cName="fa-sharp fa-solid fa-bottle-water fa-shake fa-2xl"
         section="section4"
         title="1 PAPEL Truck = 1.5 Million Packs"
-        desc="Everyone else need 12 trucks to ship fully formed bottles."
+        desc="Everyone else needs 12 trucks to ship fully-formed bottles."
         imgSrc="/assets/img/truck_1.svg"
         imgName="truck"
       />

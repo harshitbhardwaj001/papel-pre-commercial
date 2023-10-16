@@ -33,8 +33,8 @@ function WaterName() {
           <p>
             Ever Wonder if your water is just hydrating you or igniting a
             revolution within? Curiosity flows within us- Where does your water
-            come from? How does it shapes the world? Is it helping the
-            envirnoment? Is it bringing the change? If not. Change the way you
+            come from? How does it shape the world? Is it helping the
+            environment? Is it bringing a change? If not. Change the way you
             drink.
           </p>
         </motion.div>
