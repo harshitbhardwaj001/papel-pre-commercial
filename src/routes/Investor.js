@@ -4,6 +4,7 @@ import Deck from "../Components/Deck";
 import ErrorBoundary from "../ErrorBoundary";
 import emailjs from "@emailjs/browser";
 import { Helmet } from "react-helmet-async";
+import "./InvestorStyles.css";
 
 function Investor() {
   const [email, setEmail] = useState("");
@@ -66,7 +67,11 @@ function Investor() {
       {!modal && (
         <div className={"subscribe"}>
           <div className="mail" id="form">
-            <h2>Enter Your Valid Email To Access Papel's Open Deck</h2>
+            <h2>Enter Your Valid Email To Access Papel's Open Pitch Deck</h2>
+            <p>
+              Your backing keeps the show running, and we swear{" "}
+              <strong> no email spam, ever!</strong>
+            </p>
             <form ref={form}>
               <input
                 type="email"
